@@ -1,0 +1,42 @@
+/* HEADER */
+
+.header {
+  background-color: $brand-purple;
+  height:11.9rem;
+
+  .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .menu{
+    display: flex;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-left:5.6rem;
+
+      img {
+        margin-right: 1.4rem;
+      }
+
+      span{
+        color:$link;
+      }
+    }
+  }
+
+  @include reponsivo(680px){
+    height:9rem;
+    .logo {
+      width: 100%;
+      text-align:center;
+    }
+    .menu{
+      display: none;
+    }
+  }
+}
