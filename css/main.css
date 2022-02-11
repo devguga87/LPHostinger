@@ -74,3 +74,108 @@ li {
     display: none;
   }
 }
+
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  background-color: #5F3CA1;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}
+
+.hero-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-section .hero-text .hero-title {
+  font-family: 'PT Sans',sans-serif;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.8rem;
+  max-width: 55rem;
+  color: #FFFFFF;
+}
+
+.hero-section .hero-text .hero-subtitle {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.7rem;
+  letter-spacing: 0em;
+  max-width: 48rem;
+  color: #FFFFFF;
+  margin-top: 1.6rem;
+}
+
+.hero-section .hero-text .hero-button {
+  display: inline-block;
+  padding: 1.6rem 5rem;
+  border-radius: 6px;
+  background-color: #FFBF00;
+  margin-top: 3.2rem;
+  margin-bottom: 8.6rem;
+  transition: transform .3s;
+}
+
+.hero-section .hero-text .hero-button:hover {
+  transform: scale(1.015);
+}
+
+.hero-section .hero-text .hero-resources {
+  margin-bottom: 6rem;
+  align-items: center;
+  display: flex;
+  max-width: 220px;
+}
+
+.hero-section .hero-text .hero-resources img {
+  margin-right: 1.6rem;
+}
+
+.hero-section .hero-text .hero-resources a {
+  color: #FFFFFF;
+  transition: filter .3s;
+}
+
+.hero-section .hero-text .hero-resources a:hover {
+  filter: brightness(0.8);
+}
+
+.hero-section .hero-img img {
+  max-width: 65rem;
+  width: 100%;
+}
+
+@media (max-width: 990px) {
+  .hero-section .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-section .hero-text {
+    margin: 2rem auto 1.5rem auto;
+  }
+  .hero-section .hero-text .hero-subtitle {
+    margin: 4rem auto 1rem auto;
+  }
+  .hero-section .hero-text .hero-button {
+    margin-bottom: 3rem;
+  }
+  .hero-section .hero-text .hero-resources {
+    margin: 1rem auto 6rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .hero-section {
+    padding: 3rem 2rem;
+  }
+  .hero-section .hero-text {
+    margin: 0 auto;
+  }
+  .hero-section .hero-text .hero-title {
+    font-size: 4rem;
+  }
+}
