@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
 }
 
 html {
@@ -51,8 +53,13 @@ li {
   margin-right: 1.4rem;
 }
 
-.header .menu li span {
+.header .menu li a {
   color: #FCFCFC;
+  transition: filter .3s;
+}
+
+.header .menu li a:hover {
+  filter: brightness(0.9);
 }
 
 @media (max-width: 680px) {
