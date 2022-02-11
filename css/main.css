@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
 }
 
 html {
@@ -10,4 +13,64 @@ html {
 
 button {
   cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* HEADER */
+.header {
+  background-color: #5F3CA1;
+  height: 11.9rem;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header .menu {
+  display: flex;
+}
+
+.header .menu li {
+  display: flex;
+  align-items: center;
+  margin-left: 5.6rem;
+}
+
+.header .menu li img {
+  margin-right: 1.4rem;
+}
+
+.header .menu li a {
+  color: #FCFCFC;
+  transition: filter .3s;
+}
+
+.header .menu li a:hover {
+  filter: brightness(0.9);
+}
+
+@media (max-width: 680px) {
+  .header {
+    height: 9rem;
+  }
+  .header .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .header .menu {
+    display: none;
+  }
 }
